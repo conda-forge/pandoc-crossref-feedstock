@@ -2,7 +2,7 @@
 {% set postf1 = "" %}
 {% set postf2 = "" %}
 {% set pandoc = "2.11" %}
-{% set pandoc1 = "2.12" %}
+{% set pandoc1 = "2.13" %}
 
 package:
   name: pandoc-crossref
@@ -19,7 +19,7 @@ source:
   sha256: b6a5fd7de26258c2ed451f8c46fa52f14b8ab7102a44f699232a4cd18582de5d  # [win]
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   run:
