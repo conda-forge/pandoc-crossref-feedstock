@@ -152,4 +152,4 @@ Feedstock Maintainers
 =====================
 
 * [@kiwi0fruit](https://github.com/kiwi0fruit/)
-
+* [@mfansler](https://github.com/mfansler)
