@@ -9,7 +9,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pandoc-crossref
 
 Summary: Pandoc filter for cross-references
 
-Development: https://github.com/lierdakil/pandoc-crossref
+Development: https://github.com/lierdakil/pandoc-crossref/
 
 Documentation: https://lierdakil.github.io/pandoc-crossref/
 
@@ -73,6 +73,7 @@ Installing `pandoc-crossref` from the `conda-forge` channel can be achieved by a
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `pandoc-crossref` can be installed with:
@@ -151,7 +152,8 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@ickc](https://github.com/ickc/)
 * [@kiwi0fruit](https://github.com/kiwi0fruit/)
+* [@knaaptime](https://github.com/knaaptime/)
 * [@mfansler](https://github.com/mfansler/)
-* [@knaaptime](https://github.com/knaaptime)
 
