@@ -1,8 +1,8 @@
 {% set version = "0.3.10.0" %}
 {% set postf1 = "" %}
-{% set postf2 = "" %}
+{% set postf2 = "a" %}
 {% set pandoc = "2.11" %}
-{% set pandoc1 = "2.13" %}
+{% set pandoc1 = "2.14" %}
 
 package:
   name: pandoc-crossref
@@ -10,16 +10,16 @@ package:
 
 source:
   url: https://github.com/lierdakil/pandoc-crossref/releases/download/v{{ version }}{{ postf2 }}/pandoc-crossref-Linux.tar.xz  # [linux64]
-  sha256: c851cc8da8cb654207f7a26fab03562938db1830b78db60feb20e663d9a354a9  # [linux64]
+  sha256: 1041676f46ad32420c18239c481675add3df9470e59c3997f58a34f5bbc0ae37  # [linux64]
 
   url: https://github.com/lierdakil/pandoc-crossref/releases/download/v{{ version }}{{ postf2 }}/pandoc-crossref-macOS.tar.xz  # [osx]
-  sha256: 9db71ad991097004391cf1414603e21888d5bff5c774bea9a30a4b027c557912  # [osx]
+  sha256: 83c646aa6740fd05e9d743a9ec4d1eb0890067c72c1cef06196c605d724541c1  # [osx]
 
   url: https://github.com/lierdakil/pandoc-crossref/releases/download/v{{ version }}{{ postf2 }}/pandoc-crossref-Windows.7z  # [win]
-  sha256: b6a5fd7de26258c2ed451f8c46fa52f14b8ab7102a44f699232a4cd18582de5d  # [win]
+  sha256: 3a2e82cae0f627b0d923a2480be28d67b1c2ab60a19e268b707d2afac6ae5e24  # [win]
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   run:
@@ -34,13 +34,14 @@ about:
   home: https://github.com/lierdakil/pandoc-crossref
   license: GPL-2.0-only
   license_family: GPL
-  license_file: {{ environ["RECIPE_DIR"] }}/LICENSE
+  license_file: LICENSE
   summary: Pandoc filter for cross-references
   doc_url: https://lierdakil.github.io/pandoc-crossref/
-  dev_url: https://github.com/lierdakil/pandoc-crossref
+  dev_url: https://github.com/lierdakil/pandoc-crossref/
 
 extra:
   recipe-maintainers:
     - kiwi0fruit
     - mfansler
     - knaaptime
+    - ickc
