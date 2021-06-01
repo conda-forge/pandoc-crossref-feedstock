@@ -1,22 +1,20 @@
-{% set version = "0.3.10.0" %}
-{% set postf1 = "" %}
-{% set postf2 = "a" %}
+{% set version = "0.3.11.0" %}
 {% set pandoc = "2.11" %}
-{% set pandoc1 = "2.14" %}
+{% set pandoc1 = "2.15" %}
 
 package:
   name: pandoc-crossref
-  version: {{ version }}{{ postf1 }}
+  version: {{ version }}
 
 source:
-  url: https://github.com/lierdakil/pandoc-crossref/releases/download/v{{ version }}{{ postf2 }}/pandoc-crossref-Linux.tar.xz  # [linux64]
-  sha256: 1041676f46ad32420c18239c481675add3df9470e59c3997f58a34f5bbc0ae37  # [linux64]
+  url: https://github.com/lierdakil/pandoc-crossref/releases/download/v{{ version }}/pandoc-crossref-Linux.tar.xz  # [linux64]
+  sha256: eca741b75d909a60b8ab52653d4b8797058ec90ae168f10189ea94b6b6cd5f5e  # [linux64]
 
-  url: https://github.com/lierdakil/pandoc-crossref/releases/download/v{{ version }}{{ postf2 }}/pandoc-crossref-macOS.tar.xz  # [osx]
-  sha256: 83c646aa6740fd05e9d743a9ec4d1eb0890067c72c1cef06196c605d724541c1  # [osx]
+  url: https://github.com/lierdakil/pandoc-crossref/releases/download/v{{ version }}/pandoc-crossref-macOS.tar.xz  # [osx]
+  sha256: a1866a1d35e8afc16faf13b7cbbc7e492163e3ab91a9705b284006c4c5eb049b  # [osx]
 
-  url: https://github.com/lierdakil/pandoc-crossref/releases/download/v{{ version }}{{ postf2 }}/pandoc-crossref-Windows.7z  # [win]
-  sha256: 3a2e82cae0f627b0d923a2480be28d67b1c2ab60a19e268b707d2afac6ae5e24  # [win]
+  url: https://github.com/lierdakil/pandoc-crossref/releases/download/v{{ version }}/pandoc-crossref-Windows.7z  # [win]
+  sha256: 7eeea4920876e0432b07813be064ab993c52c3a47387a48274415bce7ab881ab  # [win]
 
 build:
   number: 0
