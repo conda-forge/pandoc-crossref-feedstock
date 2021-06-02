@@ -1,15 +1,15 @@
 About pandoc-crossref
 =====================
 
-Home: https://github.com/lierdakil/pandoc-crossref
+Home: https://github.com/lierdakil/pandoc-crossref/
 
-Package license: GPL-2.0-only
+Package license: GPL-2.0-or-later
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pandoc-crossref-feedstock/blob/master/LICENSE.txt)
 
 Summary: Pandoc filter for cross-references
 
-Development: https://github.com/lierdakil/pandoc-crossref/
+Development: https://hackage.haskell.org/package/pandoc-crossref/
 
 Documentation: https://lierdakil.github.io/pandoc-crossref/
 
