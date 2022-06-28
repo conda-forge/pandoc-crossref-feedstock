@@ -1,11 +1,11 @@
-{% set version = "0.3.12.2" %}
+{% set version = "0.3.13.0" %}
 # this appears in version but not in url
 {% set version_part = "" %}
 # see https://github.com/lierdakil/pandoc-crossref/issues/311#issuecomment-844626176 for why there's a hidden part not normally seen in the version
-{% set version_hidden_part = "a" %}
+{% set version_hidden_part = "" %}
 # best place to check the version constraint is https://hackage.haskell.org/package/pandoc-crossref
-{% set pandoc_min_version = "2.10" %}
-{% set pandoc_max_version = "2.18" %}
+{% set pandoc_min_version = "2.18" %}
+{% set pandoc_max_version = "2.19" %}
 
 package:
   name: pandoc-crossref
@@ -14,16 +14,16 @@ package:
 # you may use VERSION=... sha256sum.sh to produce the following checksum
 source:
   url: https://github.com/lierdakil/pandoc-crossref/releases/download/v{{ version }}{{ version_hidden_part }}/pandoc-crossref-Linux.tar.xz  # [linux64]
-  sha256: 8cc30dcd1062adea624067bbb4c82fc692ff11305c7a99b531436efd060a3f13  # [linux64]
+  sha256: 69ab1a4b2bbd956b8a7aaa0c2b2342a0ee4968e5848fe32c081a40f7efd42d98  # [linux64]
 
   url: https://github.com/lierdakil/pandoc-crossref/releases/download/v{{ version }}{{ version_hidden_part }}/pandoc-crossref-macOS.tar.xz  # [osx]
-  sha256: 6a4798e974a485d4f1847fed138db08cf99516c5ad821e961dc60680255f0fa1  # [osx]
+  sha256: 544cbc5bbeebec64004f8cc8628fea8b53bff7914a53d4dda981233fd9082592  # [osx]
 
   url: https://github.com/lierdakil/pandoc-crossref/releases/download/v{{ version }}{{ version_hidden_part }}/pandoc-crossref-Windows.7z  # [win]
-  sha256: 6616ebd033a27b6f3f5e5aeb0a55204fced0e7b95710574c942061cb24666fdf  # [win]
+  sha256: a3a8a51e226c9671b0938844db9e4c604277b7377aacfbc8000cf9560260eebd  # [win]
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   run:
