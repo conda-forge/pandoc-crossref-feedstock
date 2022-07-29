@@ -18,12 +18,15 @@ source:
 
   url: https://github.com/lierdakil/pandoc-crossref/releases/download/v{{ version }}{{ version_hidden_part }}/pandoc-crossref-macOS.tar.xz  # [osx]
   sha256: 544cbc5bbeebec64004f8cc8628fea8b53bff7914a53d4dda981233fd9082592  # [osx]
+  
+  url: https://github.com/lierdakil/pandoc-crossref/releases/download/v{{ version }}{{ version_hidden_part }}/pandoc-crossref-macOS.tar.xz  # [osx-arm64]
+  sha256: 544cbc5bbeebec64004f8cc8628fea8b53bff7914a53d4dda981233fd9082592  # [osx-arm64]
 
   url: https://github.com/lierdakil/pandoc-crossref/releases/download/v{{ version }}{{ version_hidden_part }}/pandoc-crossref-Windows.7z  # [win]
   sha256: a3a8a51e226c9671b0938844db9e4c604277b7377aacfbc8000cf9560260eebd  # [win]
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   run:
