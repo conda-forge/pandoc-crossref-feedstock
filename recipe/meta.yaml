@@ -5,7 +5,7 @@
 {% set version_hidden_part = "a" %}
 # best place to check the version constraint is https://hackage.haskell.org/package/pandoc-crossref
 {% set pandoc_min_version = "3.8.2" %}
-{% set pandoc_max_version = "3.9" %}
+{% set pandoc_max_version = "3.10" %}
 
 package:
   name: pandoc-crossref
