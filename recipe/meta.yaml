@@ -4,8 +4,8 @@
 # see https://github.com/lierdakil/pandoc-crossref/issues/311#issuecomment-844626176 for why there's a hidden part not normally seen in the version
 {% set version_hidden_part = "a" %}
 # best place to check the version constraint is https://hackage.haskell.org/package/pandoc-crossref
-{% set pandoc_min_version = "3.8.2" %}
-{% set pandoc_max_version = "3.10" %}
+{% set pandoc_min_version = "3.12" %}
+{% set pandoc_max_version = "3.14" %}
 
 package:
   name: pandoc-crossref
@@ -26,7 +26,7 @@ source:
   sha256: f11c828389fc7359622ad3b7a389c3a7bb3b2c7b4f0fed53e48d68c40dfc3a88  # [win]
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   run:
